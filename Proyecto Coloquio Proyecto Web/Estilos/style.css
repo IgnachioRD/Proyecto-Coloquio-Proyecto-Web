@@ -1,0 +1,303 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* box-sizing
+                            Define cómo se calculan el ancho y el alto (width y height) de 
+                            un elemento, teniendo en cuenta el contenido, el padding y el borde.
+
+                            border-box
+                            El width y height incluyen contenido + padding + border.
+                            El tamaño total de la caja es más fácil de controlar.
+
+                            El contenido se ajusta para dejar espacio al padding y borde
+                            dentro del mismo ancho).*/
+
+}
+
+body {
+    background-color: #121212;
+    color: white;   
+}
+
+/**
+Con H1
+
+header{ 
+  background-color: #1c1c1c;
+  color: #ff7b00;
+  padding: 1rem 2rem;
+  margin-top: 0.5rem;
+}
+
+header h1 {
+    font-size: 1.8rem; /*Tamaño de la fuente
+}    
+    
+*/
+
+header {
+  text-align: left;
+  margin-bottom: -20px;
+  padding-left: 2rem;
+  
+  
+  align-items: center; 
+  overflow: hidden;          /* evita que el logo agrande el header */        /* opcional: espacio desde la izquierda */
+}
+
+header img {
+  height: 160px;  /* logo más grande */
+  max-height: none;  
+}
+
+
+
+.banner {
+    background-color: #1c1c1c;
+    text-align: center; /*alinear el texto dentro (centro)*/
+    padding: 3rem 1rem 2rem;
+    border-bottom: 2px solid #ff7b00;
+}
+
+.banner h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff7b00;
+}
+
+.banner p {
+    margin-bottom: 2rem;  
+}
+
+section h2{
+    grid-column: 1 / -1; /*  Permiten que un elemento ocupe varias columnas o filas.
+                            1/-1 Ocupa todo el ancho*/ 
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff7b00;
+}
+
+/*
+display: flex; → organiza en una dimensión (fila o columna).
+
+display: grid; → organiza en dos dimensiones (filas y columnas).
+
+Con grid-template-columns, grid-template-rows, gap y grid-column 
+podés hacer layouts muy potentes y ordenados.
+*/
+
+nav ul {
+    display: flex; /*Pone todos los elementos hijos en una misma línea (row) por defecto.
+                    Te permite controlar fácilmente la alineación, el espacio entre ellos,
+                    y si se apilan en columna o fila.*/
+    justify-content: center; /*Alinea los hijos en el eje principal  (centro)
+                            (horizontal si es fila, vertical si es columna).*/
+    list-style: none; /*Quita las viñetas o numeración que aparecen por defecto en las listas.*/
+
+    gap: 2rem; /*Agrega espacio uniforme entre los hijos.*/
+}
+
+nav li:hover {
+    color: #ff7b00;
+}
+
+nav li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.productos {
+    display: grid; /*Te permite organizar elementos como si fueran una tabla, 
+                    pero con mucha más flexibilidad.*/
+    gap: 1.5rem;   /*Agrega espacio uniforme entre los hijos.*/ 
+    padding: 2rem; 
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    /*grid-template-columns: repeat:
+    Define cuántas columnas tendrá un contenedor Grid y de qué tamaño.
+    La función repeat() sirve para evitar escribir lo mismo muchas veces.
+
+    auto-fit, minmax(250px, 1fr)): Se  crean tantas columnas como quepan en la pantalla,
+    pero cada columna nunca será más chica de 250px.
+    grid-template-columns define el tamaño y cantidad de columnas en Grid.
+    repeat() sirve para no escribir lo mismo varias veces.
+    Con auto-fit y minmax() podés hacer layouts adaptables (responsive).
+
+    */
+}
+
+.producto {
+  background: #1e1e1e;
+  border-radius: 10px; /*se usa para darle bordes redondeados a los elementos                     (cajas, imágenes, botones, etc.)*/
+  box-shadow: 0 2px 8px rgba(162, 23, 23, 0.6); /**se usa para darle sombras a las cajas**/
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.3s; 
+  /*Transition: transform sirve para darle transiciones suaves (animaciones cortas) 
+  cuando cambian esas propiedades en un elemento.*/
+  display: flex;              /* convierte cada tarjeta en contenedor flexible */
+  flex-direction: column;     /* orden vertical: imagen → título → precio */
+  justify-content: space-between; /* empuja el precio al fondo */
+}
+
+.producto h3 {
+  font-size: 1rem;
+  flex-grow: 1;  /* ocupa el espacio libre y mantiene precio alineado */
+  margin-bottom: 10px;
+}
+
+.producto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(255, 123, 0, 0.987); /*Color y tamaño de la animacion*/
+}
+
+.producto img {
+  width: 100%;           /* ocupa todo el ancho del bloque */
+  height: 200px;         /* alto fijo para que todas se vean iguales */
+  object-fit: cover;     /* recorta la imagen sin deformarla */
+  border-radius: 8px;    /* esquinas redondeadas */
+  margin-bottom: 10px;   /* espacio con el texto */
+  object-fit: contain;   /* muestra toda la imagen */ 
+}
+
+.producto .imagen-corta {
+    background-color: #fff; /* o #000 según el fondo de la tarjeta */
+    /*Para la memoria ram ddr4 16gb*/
+}
+
+.precio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff7b00;
+  text-align: center;
+  
+}
+
+.beneficios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: #1c1c1c; /* 🔥 fondo oscuro */
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  color: #fff; /* texto blanco */
+  margin-bottom: 1rem;
+}
+
+.beneficio {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  max-width: 300px;
+  border-right: 1px solid #333;
+  padding-right: 1rem;
+}
+
+.beneficio:last-child {
+  border-right: none;
+}
+
+.beneficio img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.beneficio h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: #ff7b00; 
+}
+
+.beneficio p {
+  font-size: 0.9rem;
+  color: #ccc; 
+}
+
+
+
+.social-nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.social-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.social-nav a:hover {
+  color: #ff7b00; /* Cambia el color al pasar el ratón sobre los iconos */
+}
+
+
+
+/* PRODUCTOS.HTML */
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* siempre 4 por fila */
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;   
+  margin: 0 auto;
+}
+
+/* Tarjetas más grandes */
+.categorias .producto {
+  background: #1e1e1e;
+  border-radius: 14px;
+  padding: 3rem 1rem;         
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;          /* altura mínima */
+}
+
+/* Íconos más grandes */
+.categorias .producto svg {
+  width: 120px;
+  height: 120px;
+  stroke: #ff7b00;
+  
+}
+
+.categorias .producto:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 25px rgba(255,123,0,0.7);
+  color: rgb(159, 31, 31);
+}
+
+footer {
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+footer p {
+  color: #e0e0e0;
+}
+
+
+
+
+
+
+
+

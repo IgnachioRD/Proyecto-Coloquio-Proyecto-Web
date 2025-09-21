@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- board -->
+    <rect x="10" y="10" width="44" height="44" rx="3"/>
+    <!-- cpu socket -->
+    <rect x="20" y="20" width="14" height="14" rx="2"/>
+    <!-- ram slots -->
+    <line x1="38" y1="20" x2="50" y2="20"/>
+    <line x1="38" y1="24" x2="50" y2="24"/>
+    <line x1="38" y1="28" x2="50" y2="28"/>
+    <!-- pcie -->
+    <rect x="18" y="40" width="28" height="6" rx="1"/>
+    <!-- traces -->
+    <path d="M20 36h4v4"/>
+    <path d="M28 34h6v6"/>
+    <path d="M46 34h-6v6"/>
+  </g>
+</svg>

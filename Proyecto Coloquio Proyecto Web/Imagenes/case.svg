@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tower -->
+    <rect x="18" y="10" width="28" height="44" rx="2"/>
+    <!-- bays/panel -->
+    <rect x="22" y="16" width="20" height="6" rx="1"/>
+    <rect x="22" y="26" width="20" height="10" rx="1"/>
+    <!-- power button -->
+    <circle cx="32" cy="42" r="3"/>
+    <line x1="32" y1="40" x2="32" y2="42"/>
+  </g>
+</svg>

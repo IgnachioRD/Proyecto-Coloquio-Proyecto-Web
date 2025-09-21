@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- board -->
+    <rect x="10" y="20" width="44" height="24" rx="3"/>
+    <!-- bracket -->
+    <rect x="6" y="22" width="4" height="20" rx="1"/>
+    <!-- fan -->
+    <circle cx="38" cy="32" r="8"/>
+    <path d="M38 24c1.5 2 1.5 4 0 6"/>
+    <path d="M46 32c-2 1.5-4 1.5-6 0"/>
+    <path d="M38 40c-1.5-2-1.5-4 0-6"/>
+    <path d="M30 32c2-1.5 4-1.5 6 0"/>
+    <!-- power connector -->
+    <rect x="48" y="26" width="4" height="12" rx="1"/>
+  </g>
+</svg>
