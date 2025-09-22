@@ -25,7 +25,7 @@ Ignacio Ruiz Diaz - Rol: [Ejemplo: Diseño UI/UX y maquetación de la página de
 Para visualizar y probar el proyecto en tu máquina local, sigue los siguientes pasos:
 
 Clonar el repositorio: Si el proyecto está en un repositorio de Git, utiliza el siguiente comando en tu terminal:
-git clone [\[\[URL_DEL_REPOSITORIO\](https://github.com/Karinomz/Proyecto-Coloquio-Proyecto-Web)\]]
+git clone https://github.com/Karinomz/Proyecto-Coloquio-Proyecto-Web
 
 Navegar a la carpeta del proyecto:
 cd [Proyecto Coloquio Proyecto Web]
