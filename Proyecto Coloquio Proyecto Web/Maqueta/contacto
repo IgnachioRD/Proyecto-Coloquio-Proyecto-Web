@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/6b48925c26.js" crossorigin="anonymous"></script>
+  <title>Contacto - Turing Hardware</title>
+  <link rel="stylesheet" href="../Estilos/contacto.css">
+</head>
+<body>
+
+  <!-- Header con logo -->
+  <header>
+    <div class="logo">
+      <img src="../Imagenes/logoturingpro.png" alt="Logo Turing Hardware">
+    </div>
+  </header>
+
+  <!-- Banner con navegación -->
+  <div class="banner">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html" class="activo">Contacto</a></li>
+      </ul>
+    </nav>
+    <h1>Contacto</h1>
+    <p>¿Tenés alguna consulta o sugerencia? Completa el formulario y te responderemos a la brevedad.</p>
+  </div>
+
+  <!-- Sección de contacto -->
+  <main class="contacto">
+    <section class="formulario-container">
+  <h2>Envíanos un Mensaje</h2>
+  <form action="#" method="post" class="formulario">
+    <div class="campo">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    </div>
+    <div class="campo">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+    </div>
+
+    <div class="campo">
+      <label for="asunto">Asunto</label>
+      <input type="text" id="asunto" name="asunto" placeholder="Motivo del contacto" required>
+    </div>
+
+    <div class="campo">
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+  </form>
+</section>
+
+    <section class="info-contacto">
+      <h2>Información de Contacto</h2>
+      <p><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</p>
+      <p><i class="fas fa-envelope"></i> info@turinghardware.com</p>
+      <p><i class="fas fa-phone"></i> +54 11 5555-1234</p>
+      <p><i class="fas fa-clock"></i> Lunes a Viernes de 9 a 18 hs</p>
+    </section>
+  </main>
+
+  <!-- Redes sociales -->
+  <section>
+    <nav class="social-nav">
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+    </nav>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Turing Hardware | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
