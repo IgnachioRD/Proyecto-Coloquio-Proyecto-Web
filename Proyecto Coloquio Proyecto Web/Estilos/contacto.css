@@ -1,0 +1,117 @@
+@import url('style.css'); /* Reutilize los estilos generales */
+
+/*ESTILOS CONTACTO*/
+/* Contenedor general de la sección contacto */
+.contacto {
+  max-width: 500px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Formulario */
+.formulario-container {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 20px rgba(255, 123, 0, 0.3);
+}
+
+.formulario-container h2 {
+  margin-bottom: 1.5rem;
+  color: #ff7b00;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;   /* centra todo horizontalmente */
+  text-align: center;    /* centra el texto de labels y placeholders */
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;   /* ancho fijo para centrar los inputs */
+}
+
+.campo label {
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: #ff7b00;
+  text-align: center; /* centra las etiquetas */
+}
+
+.campo input,
+.campo textarea {
+  padding: 0.9rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #121212;
+  color: white;
+  font-size: 1rem;
+  text-align: center; /* centra el texto dentro de los inputs y placeholders */
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #ff7b00;
+  box-shadow: 0 0 8px rgba(255, 123, 0, 0.6);
+}
+
+.btn-enviar {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: linear-gradient(90deg, #ff7b00, #ff9500);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  text-align: center;
+  width: 200px;
+}
+
+.btn-enviar:hover {
+  background: linear-gradient(90deg, #e66900, #ff7b00);
+  transform: scale(1.05);
+}
+
+
+/* Información de contacto */
+.info-contacto {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 20px rgba(255, 123, 0, 0.3);
+}
+
+.info-contacto h2 {
+  margin-bottom: 1rem;
+  color: #ff7b00;
+}
+
+.info-contacto p {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  color: #ccc;
+}
+
+.info-contacto i {
+  color: #ff7b00;
+}
