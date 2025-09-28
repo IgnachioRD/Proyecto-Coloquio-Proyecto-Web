@@ -6,6 +6,9 @@
   <script src="https://kit.fontawesome.com/6b48925c26.js" crossorigin="anonymous"></script>
   <title>Contacto - Turing Hardware</title>
   <link rel="stylesheet" href="../Estilos/contacto.css">
+  <link rel="stylesheet" href="../Estilos/style.css">
+  <link rel="stylesheet" href="../Estilos/nav.css">
+  <link rel="stylesheet" href="../Estilos/hero.css">
 </head>
 <body>
 
@@ -17,7 +20,7 @@
   </header>
 
   <!-- Banner con navegación -->
-  <div class="banner">
+
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -26,6 +29,10 @@
         <li><a href="contacto.html" class="activo">Contacto</a></li>
       </ul>
     </nav>
+    
+
+
+  <div class="hero">
     <h1>Contacto</h1>
     <p>¿Tenés alguna consulta o sugerencia? Completa el formulario y te responderemos a la brevedad.</p>
   </div>
