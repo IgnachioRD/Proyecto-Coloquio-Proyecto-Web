@@ -1,0 +1,29 @@
+.categorias {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+/* ------------------------------------------- */
+/* MEDIA QUERY: Optimización para Móviles (Smartphones) */
+/* ------------------------------------------- */
+@media (max-width: 600px) {
+    .categorias {
+        grid-template-columns: 1fr; 
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .categorias .producto {
+        padding: 2rem 1rem;
+        min-height: 180px;
+    }
+
+    .categorias .producto svg {
+        width: 80px;
+        height: 80px;
+    }
+}
