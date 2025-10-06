@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
 .productos-tabla {
     height: 500px;
     width: 100%;
