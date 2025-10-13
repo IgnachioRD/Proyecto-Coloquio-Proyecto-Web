@@ -22,7 +22,7 @@ A continuación, se detalla la lista de los integrantes del grupo y el rol que c
 * **Omar Abdul Ahmed López** - Rol: Líder del proyecto y desarrollo de la página de inicio y productos y el estilo CSS general
 * **Nicolas Cejas** - Rol: Desarrollo de la página de contactos y estilos CSS de la pagina contactos.
 * **Matias Nicolas Cerri** - Rol: Desarrollo de la página "Sobre Nosotros" y documentación
-* **Ignacio Ruiz Diaz** - Rol: Diseño UI/UX y maquetación de la página de contacto
+* **Ignacio Ruiz Diaz** - Rol: Desarrollo y estilos de las tablas de cada categoría.
 
 ---
 
